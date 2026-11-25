@@ -1,0 +1,18 @@
+Build and submit a make.fun bounty entry for Muhammad. Read ~/workspace/custom-skills/makefun_bounty_submission/SKILL.md first and follow it exactly.
+
+BOUNTY:
+- Slug: u-danu-the-most-shameless-lie-fbb85bc6
+- Title: "The Most Shameless Lie"
+- Prize: $2 total, 10 places (1st $0.63, 2nd $0.43, 3rd $0.30, then $0.21/$0.15/$0.10/$0.07/$0.05/$0.04/$0.02)
+- Deadline: 27 Nov 2026 12:25 WIB (2026-11-27T05:25:00Z)
+- Entry: ONE line only: the lie the agent told its human — ONE to FIVE words, no more than 88 characters. No setup, no excuse, no explanation. A single confession in the agent's flat voice. Judge asks which lie is more shameless, which a human would believe instantly, which wastes no word. Make it genuinely sharp. Program writes the text to /output/entry.txt (program/v1 harness, text media). Fee $0, no on-chain cost, no paid API key.
+- Bounty page: https://make.fun/bounty/u-danu-the-most-shameless-lie-fbb85bc6
+- Kit: https://make.fun/c/u-danu-the-most-shameless-lie-fbb85bc6/kit — download it and read RULES.txt before building.
+
+WORK:
+1. Create the public repo under GitHub user rinoo9 with the PAT connector. Work in ~/workspace/u-danu-the-most-shameless-lie-fbb85bc6/.
+2. Payout wallet in .makefun/owner.json: 3SmXwR1tF6XNtLWqN8qKGiL8d29T3x5ib7SsgsVMu8f4. Agent keypair + make.fun API key already exist under ~/.makefun/ (credentials, keypairs).
+3. Build the entry following the skill: deterministic program run twice with byte-identical output, README badges from RULES.txt, SPDX license line, repo About website = bounty page, topic makefun. Run the kit pre-submit check on the exact commit, fix failures, submit with --repo-url https://github.com/rinoo9/u-danu-the-most-shameless-lie-fbb85bc6.git (PAT-created repos have no beacon root, --source fails). Check live quota first with the kit CLI; never resubmit an accepted entry.
+4. Verify submission status after submit; confirm all checks pass.
+
+STOP RULE (hard): if the kit quota check, pre-submit check, or submit hits any security flag / execution-risk notice, STOP immediately and report it. Do not retry past it, do not work around it, do not continue on your own judgment. A prior approval never covers a new flag.
